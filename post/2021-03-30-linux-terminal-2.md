@@ -6,12 +6,18 @@
 
 - `man poweroff` : 이 명령어를 통해 poweroff와 관련된 메뉴얼을 볼 수 있다.
 
-- `shut down -k` : 접속한 유저들에게 가짜로 종료 예고 메세지를 날림
+- `shutdown -k +2` : 접속한 유저들에게 가짜로 2분 후 종료 예고 메세지를 날림 (`Ctrl-Alt-F3`로 전환하면 1분마다 종료 메세지가 날라온다)
 
-## Password
-- root 비밀번호 설정하기
+- `shutdown -P +10` : 10분 뒤 종료 (`Ctrl-Alt-F3`로 전환하면 1분마다 종료 메세지가 날라온다)
+
+- `shutdown -c` : 시스템 종료 취소하기 (`Ctrl-Alt-F3`로 전환하면 종료가 취소되었다는 메세지가 날라온다)
+
+## root
+- root 계정 비밀번호 설정하기 <br>
   ![image](https://user-images.githubusercontent.com/77392444/112924527-4324ec00-914b-11eb-9285-2a8a5dcc83fe.png)
 
 - `ctrl`- `Alt` - `F3` : 새로운 터미널 열기, 또 새로운 터미널을 열려면 F4, F5...로 입력하면 된다.
 
 - `ctrl`- `Alt` - `F2` : 기존 터미널로 돌아가기
+
+- `exit`, `logout` : root계정 로그아웃
