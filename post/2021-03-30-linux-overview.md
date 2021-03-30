@@ -84,7 +84,11 @@
 
 - 무료 버전 다운로드 : workstation player https://www.vmware.com/kr/products/workstation-player/workstation-player-evaluation.html
 
+- Create New Virtual Machine - Install From iso(우분투 iso 이미지 파일을 활용한다)
+
 
 ## ubuntu 다운로드
 
 - 우분투 데스크탑 버전 다운로드 : https://ubuntu.com/download/desktop
+
+- 20GB 셋팅
