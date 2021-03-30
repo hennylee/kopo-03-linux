@@ -82,3 +82,9 @@
 ## VMWare설치하기
 - 우분투도 GUI의 유무에 따라 데스크탑 버전, 서버 버전 이렇게 두 가지로 나뉜다.
 
+- 무료 버전 다운로드 : workstation player https://www.vmware.com/kr/products/workstation-player/workstation-player-evaluation.html
+
+
+## ubuntu 다운로드
+
+- 우분투 데스크탑 버전 다운로드 : https://ubuntu.com/download/desktop
