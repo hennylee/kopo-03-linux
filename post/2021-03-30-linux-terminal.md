@@ -34,6 +34,13 @@
 - `vi 문서이름` : 문서 만들기
 
 
+
+- `cp` : 복사하기
+
+![image](https://user-images.githubusercontent.com/77392444/113073416-05d06500-9204-11eb-84ab-4f81120b0a39.png)
+![image](https://user-images.githubusercontent.com/77392444/113073442-108afa00-9204-11eb-900e-e35eba3c2c0a.png)
+
+
 ## vi 명령어
 
 - `Insert` : 입력모드
