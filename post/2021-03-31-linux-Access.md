@@ -175,3 +175,5 @@
 - `fg` : Foreground로 실행 
 
 - `bg` : Background로 실행
+
+- `ctrl` + c : 프로세스 종료
