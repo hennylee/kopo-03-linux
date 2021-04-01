@@ -45,6 +45,9 @@
   
 - `exit`을 통해 로그아웃하면 이전의 계정으로 접속된다. `su`를 통해 계정을 전환해도 로그아웃되는 것이 아니기 때문에 뒤에 계정이 숨어있는 것으로 볼 수 있다. 
 
+![9B00CDE3-DEDF-44E0-9584-1F56699310A2](https://user-images.githubusercontent.com/77392444/113230215-7f835400-92d3-11eb-8eab-7b153ce29726.jpeg)
+
+
 - `whoami` : 현재 접속된 계정이 무엇인지 알려줌
 
 - `sudo passwd` : passwd를 변경하기
