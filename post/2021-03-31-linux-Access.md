@@ -81,6 +81,7 @@
 
 - i-node란? 파일이 생성될때마다 주어지는 고유의 번호이다.
   - `-i` : i옵션을 주면 i-node를 확인할 수 있다.
+
 ![image](https://user-images.githubusercontent.com/77392444/113235382-e443ac00-92dd-11eb-83a0-04325b4481a9.png) <br>
 
 - 리눅스에서 파일 구성 : `파일명` + `i-node` + `데이터 블록`
@@ -107,7 +108,7 @@
 - 이때, 심볼릭 링크를 살리려면? 
 
 - 심볼릭 링크가 가리키던 원본 파일과 같은 이름의 파일을 만들면 다시 가리키는 대상이 생긴다. 하지만 기존 원본과는 다른 것을 가르키게 된다. <br>
-- ![image](https://user-images.githubusercontent.com/77392444/113234707-bf9b0480-92dc-11eb-8fde-3e08bef7de07.png)
+![image](https://user-images.githubusercontent.com/77392444/113234707-bf9b0480-92dc-11eb-8fde-3e08bef7de07.png)
 
 - 심벌링링크는 원본 이름만 같다면, 다른 파일이어도 동작하기 때문이다. 
 
@@ -128,7 +129,49 @@
   - 소프트링크가 2개일 때<br>
 ![image](https://user-images.githubusercontent.com/77392444/113236580-16560d80-92e0-11eb-838f-a105ff61e4e5.png)
 
-  - 소프트링크가 3개일 때
+  - 소프트링크가 3개일 때<br>
+![image](https://user-images.githubusercontent.com/77392444/113242460-047a6780-92ec-11eb-945d-e8d1308672ad.png)
 
 
-## 프로세스, 서비스(데몬)
+## 프로세스 (*교재 참고*)
+
+- 프로그램이 메모리에 올라간 상태를 프로세스라고 한다.
+
+- 한 프로세스 안에는 쓰레드라는 것이 있다. 
+
+
+
+- `ps` : 현재 프로세스 상태 확인
+  - `-ef` : 프로세스의 번호와 상태 확인
+  - `-ef | grep 원하는 프로세스명` : 특정 프로세스의 번호와 상태 확인
+
+![image](https://user-images.githubusercontent.com/77392444/113243511-1d841800-92ee-11eb-9b2b-9cfaf8455dfb.png)
+  - `PID` : Process ID
+  - `PPID` : Parent Process ID
+
+
+- `kill` : 프로세스 종료하는 명령어
+  - `kill -9` : 강제로 종료하는 옵션
+
+
+- 부모 프로세스와 자식 프로세스 : 자식만 종료하면 부모는 실행될 수 있지만, 부모를 종료시키면 자식도 종료된다.
+
+- `pstree` : 부모-자식 프로세스 관계를 트리 형태로 보여주는 명령어
+
+
+- 프로세스는 Foreground Process와 Background Process가 있다. 
+
+- Foreground Process : 사용자와 상호작용을 해야만 하는 작업
+
+- Background Process : 사용자와 상호작용을 하지 않아도 되는 작업
+
+- 터미널로 `gedit`을 실행시키면 Foreground Process로 실행되어서 터미널 작업은, gedit이 종료된 후에야 수행된다. 
+
+- `&` : 이런 경우, 터미널과 gedit을 동시에 실행시키기 위해 `&` 명령어로 gedit을 Background Process로 실행한다. 
+
+- `jobs` : 현재 실행중인 Background Process 확인하는 명령어
+![image](https://user-images.githubusercontent.com/77392444/113245129-44901900-92f1-11eb-8b76-40c776ccd788.png)
+
+- `fg` : Foreground로 실행 
+
+- `bg` : Background로 실행
