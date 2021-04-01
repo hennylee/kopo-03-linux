@@ -44,7 +44,6 @@
   - `su` , `su -` : 뒤에 root는 생략할 수 있다.  
   
 - `exit`을 통해 로그아웃하면 이전의 계정으로 접속된다. `su`를 통해 계정을 전환해도 로그아웃되는 것이 아니기 때문에 뒤에 계정이 숨어있는 것으로 볼 수 있다. 
-
 ![9B00CDE3-DEDF-44E0-9584-1F56699310A2](https://user-images.githubusercontent.com/77392444/113230215-7f835400-92d3-11eb-8eab-7b153ce29726.jpeg)
 
 
@@ -60,7 +59,7 @@
 ## 파일의 소유와 허가권
 
 - 파일 허가권 : 3개씩 끊어서 구분한다. 소유자 / 그룹 / 그외 사용자에 대해 각각 Read(4), Write(2), eXecute(1)의 권한을 2진법으로 표기한다. <br>
-  ![image](https://user-images.githubusercontent.com/77392444/113228610-35e53a00-92d0-11eb-86ae-abb08bc0cf90.png)
+![image](https://user-images.githubusercontent.com/77392444/113228610-35e53a00-92d0-11eb-86ae-abb08bc0cf90.png)
   - 755 : rwx r-x r-x
   - 641 : rw- r-- --x
   - 554 : r-x r-x r--
@@ -82,7 +81,7 @@
 
 - i-node란? 파일이 생성될때마다 주어지는 고유의 번호이다.
   - `-i` : i옵션을 주면 i-node를 확인할 수 있다.
-  ![image](https://user-images.githubusercontent.com/77392444/113235382-e443ac00-92dd-11eb-83a0-04325b4481a9.png)
+![image](https://user-images.githubusercontent.com/77392444/113235382-e443ac00-92dd-11eb-83a0-04325b4481a9.png)
 
 - 리눅스에서 파일 구성 : `파일명` + `i-node` + `데이터 블록`
 
@@ -108,7 +107,7 @@
 - 이때, 심볼릭 링크를 살리려면? 
 
 - 심볼릭 링크가 가리키던 원본 파일과 같은 이름의 파일을 만들면 다시 가리키는 대상이 생긴다. 하지만 기존 원본과는 다른 것을 가르키게 된다. 
-![image](https://user-images.githubusercontent.com/77392444/113234707-bf9b0480-92dc-11eb-8fde-3e08bef7de07.png)
+- ![image](https://user-images.githubusercontent.com/77392444/113234707-bf9b0480-92dc-11eb-8fde-3e08bef7de07.png)
 
 - 심벌링링크는 원본 이름만 같다면, 다른 파일이어도 동작하기 때문이다. 
 
@@ -119,15 +118,15 @@
 
 - 하드링크를 여러개 만들면? Links 수가 많아진다.
   - 하드링크가 2개일 때
-  ![image](https://user-images.githubusercontent.com/77392444/113236287-8d3ed680-92df-11eb-9610-02e9a2b88230.png)
+![image](https://user-images.githubusercontent.com/77392444/113236287-8d3ed680-92df-11eb-9610-02e9a2b88230.png)
 
   - 하드링크가 3개일 때
-  ![image](https://user-images.githubusercontent.com/77392444/113236384-b495a380-92df-11eb-8361-c0131bcd6708.png)
+![image](https://user-images.githubusercontent.com/77392444/113236384-b495a380-92df-11eb-8361-c0131bcd6708.png)
 
 
 - 소프트링크를 여러개 만들면?
   - 소프트링크가 2개일 때
-  ![image](https://user-images.githubusercontent.com/77392444/113236580-16560d80-92e0-11eb-838f-a105ff61e4e5.png)
+![image](https://user-images.githubusercontent.com/77392444/113236580-16560d80-92e0-11eb-838f-a105ff61e4e5.png)
 
   - 소프트링크가 3개일 때
 
