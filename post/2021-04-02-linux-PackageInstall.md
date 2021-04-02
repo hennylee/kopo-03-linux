@@ -18,6 +18,7 @@
 - 링크 : http://archive.ubuntu.com/ubuntu/pool/universe/g/galculator/galculator_2.1.4-1build1_amd64.deb
 
 - 단점 2 : 의존성 문제, 패키지가 설치되려며 미리 설치되어야 하는 패키지를 일일히 다운로드 해줘야 한다.
+
 ![image](https://user-images.githubusercontent.com/77392444/113367253-832bdf00-9396-11eb-9551-57846d6efedc.png)
 
 
@@ -51,9 +52,11 @@
 ## java apt-get 실습
 
 - 자바 파일 작성하기
+
 ![image](https://user-images.githubusercontent.com/77392444/113372644-1fa8ae00-93a4-11eb-9cbb-d762928e9ea5.png)
 
 - jdk설치하기
+
 ![image](https://user-images.githubusercontent.com/77392444/113372723-46ff7b00-93a4-11eb-9774-23d58c251e76.png)
 
 - `whereis java`
@@ -67,6 +70,5 @@
 
 ## git apt-get 실습
 - git 설치하기
-![image](https://user-images.githubusercontent.com/77392444/113374010-0e14d580-93a7-11eb-8980-4fb18d3770a1.png)
 
-- 
+![image](https://user-images.githubusercontent.com/77392444/113374010-0e14d580-93a7-11eb-8980-4fb18d3770a1.png)
