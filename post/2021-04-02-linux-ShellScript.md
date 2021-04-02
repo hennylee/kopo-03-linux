@@ -1,8 +1,4 @@
 
-## vim
-- vi를 더 편하게 사용할 수 있는 패키지이다. 
-
-- `sudo apt-get install vim` 명령어로 설치한다. 
 
 ## 리눅스의 셸
 
