@@ -100,6 +100,32 @@
 |-w 파일명 | 파일이 쓰기 가능이면 참|
 |-x 파일명 | 파일이 시행 가능이면 참|
 
+
+
+
+## 관계 연산자 
+
+- AND : `-a` , `&&`
+
+- OR : `-o` , `||`
+
+- `-a`나 `-o`는 테스트문(`[ ]`)안에서 사용할 수 있는데, 괄호 등의 특수문자 앞에는 `\`를 넣어야 한다. 
+
+- `vim andor.sh` : file명을 입력받고 해달파일이 일반 파일이고 size가 0보다 크면 파일 앞 5줄을 출력하도록 입력한 쉘스크립트
+
+![image](https://user-images.githubusercontent.com/77392444/113661845-d5943500-96e1-11eb-9e0e-59447a73d436.png)
+
+
+- `sh andor.sh`
+
+
+![image](https://user-images.githubusercontent.com/77392444/113662067-4dfaf600-96e2-11eb-900b-8897a192f086.png)
+
+
+
+
+
+
 ## if ~ else문
 
 - `if`와 `[ 조건 ]` 사이에 공백이 없으면 오류가 발생한다. `[ 조건 ]` 안 각 단어 사이에도 공백이 있어야 한다.
@@ -169,26 +195,4 @@
 - `sh forin2.sh`
 
 ![image](https://user-images.githubusercontent.com/77392444/113663261-af23c900-96e4-11eb-9670-3146d420a31e.png)
-
-
-
-## 관계 연산자 
-
-- AND : `-a` , `&&`
-
-- OR : `-o` , `||`
-
-- `-a`나 `-o`는 테스트문(`[ ]`)안에서 사용할 수 있는데, 괄호 등의 특수문자 앞에는 `\`를 넣어야 한다. 
-
-- `vim andor.sh` : file명을 입력받고 해달파일이 일반 파일이고 size가 0보다 크면 파일 앞 5줄을 출력하도록 입력한 쉘스크립트
-
-![image](https://user-images.githubusercontent.com/77392444/113661845-d5943500-96e1-11eb-9e0e-59447a73d436.png)
-
-
-- `sh andor.sh`
-
-
-![image](https://user-images.githubusercontent.com/77392444/113662067-4dfaf600-96e2-11eb-900b-8897a192f086.png)
-
-
 
