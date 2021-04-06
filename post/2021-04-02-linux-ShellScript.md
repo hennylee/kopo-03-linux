@@ -86,6 +86,20 @@
 |!수식|수식이 거짓이면 참|
 
 
+- 파일 관련 조건
+
+|파일 관련 조건|설명|
+|-------------|----|
+|-d 파일명 | 파일이 디렉토리이며 참|
+|-e 파일명 | 파일이 존재하면 참 |
+|-f 파일명 | 파일이 일반 파일이면 참|
+|-g 파일명 | 파일에 set-group-id가 설정되면 참|
+|-r 파일명 | 파일이 읽기 기능이면 참|
+|-s 파일명 | 파일 크기가 0이 아니면 참|
+|-u 파일명 | 파일에 set-user-id가 설정되면 참|
+|-w 파일명 | 파일이 쓰기 가능이면 참|
+|-x 파일명 | 파일이 시행 가능이면 참|
+
 ## if ~ else문
 
 - `if`와 `[ 조건 ]` 사이에 공백이 없으면 오류가 발생한다. `[ 조건 ]` 안 각 단어 사이에도 공백이 있어야 한다.
@@ -111,3 +125,59 @@
 
 
 ![image](https://user-images.githubusercontent.com/77392444/113388467-40372f00-93c9-11eb-95b1-1ca094d6ddc8.png)
+
+
+## case ~ esac문
+
+- `vim case1.sh`
+
+![image](https://user-images.githubusercontent.com/77392444/113658724-86e39c80-96db-11eb-8ada-2a6c43b5507d.png)
+
+
+- `sh case1.sh`
+
+![image](https://user-images.githubusercontent.com/77392444/113658866-d4600980-96db-11eb-9e59-8a5d8151eb2e.png)
+
+
+- `vim case2.sh`
+
+![image](https://user-images.githubusercontent.com/77392444/113660407-f3ac6600-96de-11eb-997e-eac6882d9e83.png)
+
+- `sh case2.sh`
+  - `[nN][oO]` : 
+  
+![image](https://user-images.githubusercontent.com/77392444/113660446-0aeb5380-96df-11eb-9f48-c91d02cca8b3.png)
+
+
+## for ~ in 문
+
+- `vim forin1.sh`
+  - 주의사항 : `변수=값` 을 작성할 때는 `=`의 앞 뒤에 공백이 들어가면 안된다.
+
+![image](https://user-images.githubusercontent.com/77392444/113662392-fa3cdc80-96e2-11eb-9f69-ef6650d04013.png)
+
+- `sh forin1.sh`
+
+![image](https://user-images.githubusercontent.com/77392444/113662431-088af880-96e3-11eb-9c11-905d71941678.png)
+
+
+## 관계 연산자 
+
+- AND : `-a` , `&&`
+
+- OR : `-o` , `||`
+
+- `-a`나 `-o`는 테스트문(`[ ]`)안에서 사용할 수 있는데, 괄호 등의 특수문자 앞에는 `\`를 넣어야 한다. 
+
+- `vim andor.sh` : file명을 입력받고 해달파일이 일반 파일이고 size가 0보다 크면 파일 앞 5줄을 출력하도록 입력한 쉘스크립트
+
+![image](https://user-images.githubusercontent.com/77392444/113661845-d5943500-96e1-11eb-9e0e-59447a73d436.png)
+
+
+- `sh andor.sh`
+
+
+![image](https://user-images.githubusercontent.com/77392444/113662067-4dfaf600-96e2-11eb-900b-8897a192f086.png)
+
+
+
