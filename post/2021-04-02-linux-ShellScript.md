@@ -144,7 +144,7 @@
 ![image](https://user-images.githubusercontent.com/77392444/113660407-f3ac6600-96de-11eb-997e-eac6882d9e83.png)
 
 - `sh case2.sh`
-  - `[nN][oO]` : 
+  - `[nN][oO]` : 첫번째 글자에 n이나 N, 두번째 글자에 o나 O가 들어가는 문자
   
 ![image](https://user-images.githubusercontent.com/77392444/113660446-0aeb5380-96df-11eb-9f48-c91d02cca8b3.png)
 
