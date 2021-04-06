@@ -198,3 +198,23 @@
 
 ![image](https://user-images.githubusercontent.com/77392444/113663261-af23c900-96e4-11eb-9670-3146d420a31e.png)
 
+
+## while문
+
+
+## until문
+- 조건식이 거짓인 동안 반복 실행한다. 
+
+## break, continue, exit, return문
+
+- `vim bce.sh`
+
+![image](https://user-images.githubusercontent.com/77392444/113668482-43922980-96ed-11eb-93bd-31e9fe6c2450.png)
+
+- `sh bce.sh`
+
+![image](https://user-images.githubusercontent.com/77392444/113668507-4f7deb80-96ed-11eb-93ed-abb239b09d84.png)
+
+- exit 뒤에 번호를 붙여주면, `echo $?` 명령어로 어느 시점에 exit 되었는지 알 수 있다. 
+
+![image](https://user-images.githubusercontent.com/77392444/113669500-d7182a00-96ee-11eb-8beb-ee740d18fb48.png)
