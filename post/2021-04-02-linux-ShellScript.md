@@ -160,6 +160,17 @@
 
 ![image](https://user-images.githubusercontent.com/77392444/113662431-088af880-96e3-11eb-9c11-905d71941678.png)
 
+- `vim forin2.sh`
+  - `fname` 변수에 `ls *.sh`명령의 실행 결과를 하나씩 넣어서 do 아래 문장을 실행한다.
+
+![image](https://user-images.githubusercontent.com/77392444/113663212-9ddabc80-96e4-11eb-8882-824460d4fa6e.png)
+
+
+- `sh forin2.sh`
+
+![image](https://user-images.githubusercontent.com/77392444/113663261-af23c900-96e4-11eb-9670-3146d420a31e.png)
+
+
 
 ## 관계 연산자 
 
