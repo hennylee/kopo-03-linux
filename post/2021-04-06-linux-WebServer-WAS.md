@@ -54,3 +54,5 @@
 
 - deploy는 배포 후 동작하도록 WAS에게 명령하는것이다.
 
+## Web Server 와 WAS 연결하기
+- 
