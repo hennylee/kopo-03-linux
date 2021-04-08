@@ -51,7 +51,7 @@
 ![image](https://user-images.githubusercontent.com/77392444/113960725-dbb02000-985f-11eb-9801-e077fdb7ad63.png)
 
 
-## Standalone WebServer1에 worker 연결하기 (JkMount/loadbalance)
+## Standalone WebServer1에 worker 연결하기 (JkMount)
 
 - 설정 파일 : `sudo vim /etc/apache2/sites-available/000-default.conf`
 
@@ -81,7 +81,20 @@
 
 ## connector에서 loadbalancer worker들 묶어주기
 
+- worker이름을 loadbalancer 이름으로 변경하기
+
+![image](https://user-images.githubusercontent.com/77392444/113966644-70b81680-986a-11eb-8cf3-909cb7b6d2cb.png)
+
+- loadbalancer로 묶을 worker들 등록하기
+
+![image](https://user-images.githubusercontent.com/77392444/113966708-92190280-986a-11eb-9805-33d5960ccd3b.png)
+
+
+
 ## apache에서 loadbalancer worker 매핑해주기
+
+![image](https://user-images.githubusercontent.com/77392444/113966757-a8bf5980-986a-11eb-8f53-eb96b1b25620.png)
+
 
 ## tomcat port번호 바꾸기
 
