@@ -1,3 +1,13 @@
+## WebServer와 Was
+
+![image](https://user-images.githubusercontent.com/77392444/114024060-9535e200-98ae-11eb-8c26-f25a3887b00d.jpeg)
+
+- 좀더 상세하게 표현하면 아래와 같은 구조를 갖는다.
+
+![image](https://user-images.githubusercontent.com/77392444/114024458-0b3a4900-98af-11eb-913d-ba43be2a53bd.jpeg)
+
+
+
 ## Web Server의 역할
 - Static resource
   - Web Server에서 Static Resource 처리를 빨리 해준다.
@@ -20,7 +30,6 @@
 
 ## index 페이지 바꿔보기
 - http://localhost에 접속하면 나오는 페이지는 `located at /var/www/html/index.html` 에 있다.
-
 
 
 ## WAS 설치하기
