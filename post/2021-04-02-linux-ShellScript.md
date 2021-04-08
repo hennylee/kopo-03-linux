@@ -267,7 +267,7 @@ do; (명령); done
 
 ## while문
 
-- 형식 : 조건이 만족되면 do ~ done 사이의 스크립트를 실행하며, 조건이 false가 되는 경우 반복에서 빠져나온다. 
+- 형식 : 조건이 true이면 do ~ done 사이의 스크립트를 실행하며, 조건이 false가 되는 경우 반복에서 빠져나온다. 
 
 ```
 while [ 조건 ]
@@ -276,9 +276,34 @@ do
 done
 ```
 
+- 비밀번호가 1234이면 일치, 아니면 계속 입력 받는 쉘스크립트
+
+![image](https://user-images.githubusercontent.com/77392444/113948168-41dc7900-9847-11eb-8382-5bbc64c1e8e5.png)
+
+
+- 오류
+   - 띄어 쓰기가 있는 문장은 String으로 인식되지 않기 때문에 `" "` 로 묶어줘야 한다. 
+   - 쉘스크립트에서 같지 않다는 `!=`이다.
+
+![image](https://user-images.githubusercontent.com/77392444/113947978-cd093f00-9846-11eb-8f01-e5a07480ce2a.png)
+
+
 
 ## until문
-- 조건식이 거짓인 동안 반복 실행한다. 
+- 형식 : 조건식이 false이면 do ~ done 사이 스크립트를 실행하고, 조건이 true이면 반복문을 탈출한다.
+
+```
+util [ 조건 ]
+do
+   실행문장
+done
+```
+
+- 비밀번호 일치 확인 스크립트
+
+![image](https://user-images.githubusercontent.com/77392444/113949027-4013b500-9849-11eb-9d2c-b70e9cc0214c.png)
+
+
 
 ## break, continue, exit, return문
 
