@@ -139,9 +139,7 @@
 
 
 - `&&`
-
-![Uploading 0618882F-F04A-4F21-A327-2041274EF982.jpeg…]()
-
+![image](https://user-images.githubusercontent.com/77392444/113992087-116bfd80-988e-11eb-84cc-14689b2f93b0.jpeg)
 
 
 ## if ~ else문
