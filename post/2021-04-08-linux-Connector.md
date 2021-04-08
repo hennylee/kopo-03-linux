@@ -37,6 +37,7 @@
 - WebServer1 : Standalone (192.168.77.128)에 위치한 apache2
 
 - Connector : Standalone (192.168.77.128)에 위치한 libapache2
+  - libapache2라는 Connector는 apache2의 라이브러리이기 때문에 둘은 같은 컴퓨터(IP)에 위치해야 한다. 
 
 - WAS1 : ServerA (192.168.77.131)에 위치한 tomcat9
 
