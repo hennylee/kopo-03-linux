@@ -44,7 +44,7 @@
 
 
 
-## Standalone Connector worker 등록하기 
+## Standalone Connector worker 등록하기 (JkMount : url패턴으로 구분하는 방법)
 
 - 설정 파일 : `sudo vim /etc/libapache2-mod-jk/workers.properties`
 
@@ -71,5 +71,27 @@
 - tomcat9 설정파일에 connector 등록하기 : `sudo vim /etc/tomcat9/server.xml`
 
 ![image](https://user-images.githubusercontent.com/77392444/113961418-f6cf5f80-9860-11eb-856d-d03870135dbb.png)
+
+
+
+
+
+
+# Standalone Connector worker 등록하기 (loadbalancing : 하나의 url인데 다른 서버로 돌리기)
+
+## connector에서 loadbalancer worker들 묶어주기
+
+## apache에서 loadbalancer worker 매핑해주기
+
+## tomcat port번호 바꾸기
+
+- severA는 port 8010
+
+![image](https://user-images.githubusercontent.com/77392444/113966313-d7890000-9869-11eb-8509-b108d4dc5eb7.png)
+
+
+## connector에 등록된 worker의 port번호 바꾸기
+
+![image](https://user-images.githubusercontent.com/77392444/113966247-b32d2380-9869-11eb-962f-438b9d78b39d.png)
 
 
