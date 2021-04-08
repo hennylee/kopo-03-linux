@@ -44,7 +44,9 @@
 
 - WAS2 : ServerC (192.168.77.130)에 위치한 tomcat9
 
-- JkMount 방식으로 Connect하기 때문에, WAS1에는 sample2.war라는 app이 deploy되고 WAS2에는 sample3라는 app을 deploy해야 한다. 
+- JkMount방식은 서로 다른 url 패턴으로 서버들을 구분하는 것이다. 
+
+- 때문에, WAS1에는 sample2.war라는 app이 deploy되고 WAS2에는 sample3라는 app을 deploy되어야 서로 다른 Url 패턴으로 구분할 수 있다. 
   - WAS1 url 패턴 : `/sample2/*`
   - WAS2 url 패턴 : `/sample3/*`
 
@@ -79,9 +81,7 @@
 
 
 
-# Standalone Connector worker 등록하기 (loadbalancing : 하나의 url인데 다른 서버로 돌리기)
-
-# Webserver1 (ip0) - WAS1(ip1, port1), WAS2(ip2, port2) 연동하기 (JkMount 방식)
+# Webserver1 (ip0) - WAS1(ip1, port1), WAS2(ip2, port2) 연동하기 (loadbalancing 방식)
 
 ## 개요
 
@@ -94,9 +94,11 @@
 
 - WAS2 : ServerC (192.168.77.130)에 위치한 tomcat9
 
-- JkMount 방식이기 때문에, WAS1에는 sample2.war라는 app이 deploy되고 WAS2에는 sample3라는 app을 deploy해야 한다. 
-  - WAS1 url 패턴 : `/sample2/*`
-  - WAS2 url 패턴 : `/sample3/*`
+- loadbalancing 방식이란? : 하나의 url인데 다른 서버로 돌리는 것이다. 네이버같이 사용자가 많은 서비스의 경우 이렇게 같은 사이트에도 여러 대의 WAS를 두고 클러스터링해서 부하를 방지한다. 
+
+- loadbalancing 방식이기 때문에, WAS1과 WAS2에는 같은 app을 deploy해야 한다. 
+
+- 때문에 WAS1, WAS2 url 패턴도 동일해야 한다. 
 
 ## connector에서 loadbalancer worker들 묶어주기
 
