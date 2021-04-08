@@ -1,4 +1,4 @@
-# Webserver(ip1)에 다른 IP(ip2)의 WAS(tomcat9) 연동하기
+# IP(ip1)에 Webserver(Apache2)를 깔고 다른 IP(ip2)의 WAS(tomcat9) 연동하기
 
 
 ## ServeC 컴퓨터에 tomcat9 설치하기
@@ -30,7 +30,8 @@
 - 변경 설정 적용하기 위해 데몬 재시작 : `systemctl restart tomcat9`
 
 
-# Webserver1 (ip0) - WAS1(ip1, port1), WAS2(ip2, port2) 연동하기
+
+# Webserver1 (ip0) - WAS1(ip1, port1), WAS2(ip2, port2) 연동하기 (JkMount 방식)
 
 ## 개요
 
@@ -43,6 +44,9 @@
 
 - WAS2 : ServerC (192.168.77.130)에 위치한 tomcat9
 
+- JkMount 방식으로 Connect하기 때문에, WAS1에는 sample2.war라는 app이 deploy되고 WAS2에는 sample3라는 app을 deploy해야 한다. 
+  - WAS1 url 패턴 : `/sample2/*`
+  - WAS2 url 패턴 : `/sample3/*`
 
 
 ## Standalone Connector worker 등록하기 (JkMount : url패턴으로 구분하는 방법)
@@ -52,16 +56,16 @@
 ![image](https://user-images.githubusercontent.com/77392444/113960725-dbb02000-985f-11eb-9801-e077fdb7ad63.png)
 
 
-## Standalone WebServer1에 worker 연결하기 (JkMount)
+## Standalone WebServer1에 worker 맵핑하기 (JkMount)
 
 - 설정 파일 : `sudo vim /etc/apache2/sites-available/000-default.conf`
 
 ![image](https://user-images.githubusercontent.com/77392444/113959379-b7ebda80-985d-11eb-8efc-25846c47a295.png)
 
 
-## WAS1
+## WAS1 (WAS2와 동일)
 
-- tomcat9 설정파일에 connector 등록하기
+- tomcat9 다운로드하기
 
 - tomcat9 설정파일에 connector 등록하기
 
@@ -75,10 +79,24 @@
 
 
 
-
-
-
 # Standalone Connector worker 등록하기 (loadbalancing : 하나의 url인데 다른 서버로 돌리기)
+
+# Webserver1 (ip0) - WAS1(ip1, port1), WAS2(ip2, port2) 연동하기 (JkMount 방식)
+
+## 개요
+
+- WebServer1 : Standalone (192.168.77.128)에 위치한 apache2
+
+- Connector : Standalone (192.168.77.128)에 위치한 libapache2
+  - libapache2라는 Connector는 apache2의 라이브러리이기 때문에 둘은 같은 컴퓨터(IP)에 위치해야 한다. 
+
+- WAS1 : ServerA (192.168.77.131)에 위치한 tomcat9
+
+- WAS2 : ServerC (192.168.77.130)에 위치한 tomcat9
+
+- JkMount 방식이기 때문에, WAS1에는 sample2.war라는 app이 deploy되고 WAS2에는 sample3라는 app을 deploy해야 한다. 
+  - WAS1 url 패턴 : `/sample2/*`
+  - WAS2 url 패턴 : `/sample3/*`
 
 ## connector에서 loadbalancer worker들 묶어주기
 
