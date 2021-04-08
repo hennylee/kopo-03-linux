@@ -37,6 +37,7 @@
 
 ## 셸 스크립트 실행
 1. `sh 파일명.sh`
+      - 앞에 `sh` 명령어 없이 `./파일명.sh`로 실행하려면 실행 권한이 있어야 한다. 
 
 2. `chmod`로 execute속성으로 변경후 `sh 파일명.sh` 명령을 실행한다. 
 
@@ -80,9 +81,7 @@
 - `$PATH`, `$HOME`과 같이 쉘프로그래밍에서 공용적으로 쓰기 위해 이미 지정된 예약변수도 존재한다. 
 
 
-## 조건문의 비교 연산자
-
-- 문자열 비교 연산자
+## 문자열 비교 연산자
 
 |문자열 비교|설명|
 |----------|----|
@@ -92,7 +91,7 @@
 |-z "문자열"|문자열이 NULL이면 참|
 
 
-- 산술 비교 연산자
+## 산술 비교 연산자
 
 |산술 비교|설명|JAVA|
 |----------|----|----|
@@ -105,7 +104,7 @@
 |!수식|수식이 거짓이면 참|!(수식)|
 
 
-- 파일 관련 조건
+## 파일 관련 연산자
 
 |파일 관련 조건|설명|
 |-------------|----|
@@ -136,7 +135,6 @@
 
 - `sh andor.sh`
 
-
 ![image](https://user-images.githubusercontent.com/77392444/113662067-4dfaf600-96e2-11eb-900b-8897a192f086.png)
 
 
@@ -146,7 +144,16 @@
 
 ## if ~ else문
 
-- 형식 : if [ 조건 ] ... then ... else ... fi
+- 형식
+
+```
+if [ 조건 ]
+then
+   실행문장
+else
+   실행문장
+fi
+```
 
 - `if`와 `[ 조건 ]` 사이에 공백이 없으면 오류가 발생한다. `[ 조건 ]` 안 각 단어 사이에도 공백이 있어야 한다.
 
@@ -218,6 +225,10 @@ for in (조건)
 do
 (명령)
 done
+```
+
+```
+for in (조건); do; (명령); done
 ```
 
 ```
@@ -303,9 +314,25 @@ done
 
 ![image](https://user-images.githubusercontent.com/77392444/113949027-4013b500-9849-11eb-9d2c-b70e9cc0214c.png)
 
+- loop값이 5에서 1이 될때까지 출력하는 스크립트
+
+   - loop=\`exper $loop - 1\`  와 `loop=$(($loop-1))`는 같다. 
+
+![image](https://user-images.githubusercontent.com/77392444/113985608-504a8500-9887-11eb-97fd-799c2f484525.png)
+
+![image](https://user-images.githubusercontent.com/77392444/113985637-593b5680-9887-11eb-8055-4cdb9501de93.png)
 
 
-## break, continue, exit, return문
+## break
+
+- 반복문의 루프를 강제로 탈출하려면 break문을 사용한다. 
+
+- var값이 6이되면 break하는 쉘스크립트
+
+![image](https://user-images.githubusercontent.com/77392444/113987772-bb955680-9889-11eb-8cf0-774abafd3e64.png)
+
+
+## continue, exit, return문
 
 - `vim bce.sh`
 
@@ -318,3 +345,5 @@ done
 - exit 뒤에 번호를 붙여주면, `echo $?` 명령어로 어느 시점에 exit 되었는지 알 수 있다. 
 
 ![image](https://user-images.githubusercontent.com/77392444/113669500-d7182a00-96ee-11eb-8beb-ee740d18fb48.png)
+
+
