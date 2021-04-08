@@ -197,6 +197,17 @@ fi
 
 ## case ~ esac문
 
+- 형식
+   - 각 조건의 종료는 `;;`으로 표시한다.
+
+```
+#!/bin/sh
+case 조건
+   조건1) 실행문장1 ;;
+   조건2) 실행문장2 ;;
+esac 
+```
+
 - `vim case1.sh`
 
 ![image](https://user-images.githubusercontent.com/77392444/113658724-86e39c80-96db-11eb-8ada-2a6c43b5507d.png)
@@ -215,6 +226,9 @@ fi
   - `[nN][oO]` : 첫번째 글자에 n이나 N, 두번째 글자에 o나 O가 들어가는 문자
   
 ![image](https://user-images.githubusercontent.com/77392444/113660446-0aeb5380-96df-11eb-9f48-c91d02cca8b3.png)
+
+- 다중 조건문에서 여러문장 실행하기
+
 
 
 ## for ~ in 문
