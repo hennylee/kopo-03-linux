@@ -70,5 +70,6 @@
 
 - tomcat9 설정파일에 connector 등록하기 : `sudo vim /etc/tomcat9/server.xml`
 
-![image](https://user-images.githubusercontent.com/77392444/113960230-22e9e100-985f-11eb-9509-919736a98005.png)
+![image](https://user-images.githubusercontent.com/77392444/113961418-f6cf5f80-9860-11eb-856d-d03870135dbb.png)
+
 
