@@ -302,6 +302,9 @@ do
 done
 ```
 
+
+
+
 - 비밀번호가 1234이면 일치, 아니면 계속 입력 받는 쉘스크립트
 
 ![image](https://user-images.githubusercontent.com/77392444/113948168-41dc7900-9847-11eb-8382-5bbc64c1e8e5.png)
@@ -313,6 +316,20 @@ done
 
 ![image](https://user-images.githubusercontent.com/77392444/113947978-cd093f00-9846-11eb-8f01-e5a07480ce2a.png)
 
+
+- 현재 시간을 5번 출력하기 : (주의) `expr $변수 + 1` 처럼 expre 백쿼트 안에서 연산자는 양옆을 띄어줘야 한다. 
+
+```
+# 무한루프
+while :
+do
+   (실행할 문장)
+done
+```
+
+![image](https://user-images.githubusercontent.com/77392444/114108839-f2618000-990e-11eb-9e7e-e27db90b5d45.png)
+
+![image](https://user-images.githubusercontent.com/77392444/114108864-fd1c1500-990e-11eb-9027-26c80a83287c.png)
 
 
 ## until문
@@ -360,5 +377,19 @@ done
 - exit 뒤에 번호를 붙여주면, `echo $?` 명령어로 어느 시점에 exit 되었는지 알 수 있다. 
 
 ![image](https://user-images.githubusercontent.com/77392444/113669500-d7182a00-96ee-11eb-8beb-ee740d18fb48.png)
+
+
+## sleep
+
+- 특정한 주기 처리를 할 때 `while`문 안에 `sleep`을 자주 사용한다. 
+
+- `sleep`을 중지시키기 위해서는 `ctrl` + `c`을 사용한다. 
+
+- 1초마다 시간을 출력하는 쉘 스크립트
+
+![image](https://user-images.githubusercontent.com/77392444/114109065-71ef4f00-990f-11eb-80fb-ca863d37ea09.png)
+
+- 한 파일의 크기를 주기적으로 체크하기
+
 
 
