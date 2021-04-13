@@ -5,7 +5,9 @@
 
 - PaaS, SaaS의 기반이 되는 기술로 서버/스토리지 등의 인프라를 원하는 만큼 자원을 빌려쓸 수 있는 것이다. 
 
-- 물리적 서버, 스토리지 등을 가상화하여 고객에게 서비스 
+- 물리적 서버, 스토리지 등을 가상화하여 고객에게 서비스를 인프라 형태로 제공하는 개념이다.
+
+- VM을 할당해주고 스토리지, 네트워크 등 서비스 인프라를 제공해주는 것이다. 
 
 
 ## 구글클라우드로 IaaS 경험해보기
@@ -48,3 +50,31 @@
 - 방화벽 추가하기 : tomcat 송/수신
 
 ![image](https://user-images.githubusercontent.com/77392444/114483926-37a1ec80-9c44-11eb-82dd-a894341dc80d.png)
+
+
+## VM 인스턴스에 apache2 설치하기
+
+- 인스턴스 SSH 접속하기
+
+- apache2 설치하기 : `sudo apt-get install apache2`
+
+![image](https://user-images.githubusercontent.com/77392444/114484317-f231ef00-9c44-11eb-98af-94c746d1a21b.png)
+
+- http://34.64.119.238/ 로 접속
+
+- index.html 변경하기 : `/var/www/html/index.html`
+
+
+## VM 인스턴스에 tomcat9 설치하기
+
+- 인스턴스 SSH 접속하기
+
+- tomcat9 설치하기 : `sudo apt-get install tomcat9*`
+
+![image](https://user-images.githubusercontent.com/77392444/114485333-b8fa7e80-9c46-11eb-8ee5-b70b246e2849.png)
+
+- http://34.64.119.238:8080/ 로 접속
+
+![image](https://user-images.githubusercontent.com/77392444/114485625-358d5d00-9c47-11eb-8ecb-4ad9dc497ce9.png)
+
+- index.html 변경하기 : `/var/lib/tomcat9/webapps/ROOT/index.html`
