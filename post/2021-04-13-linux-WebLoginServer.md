@@ -103,6 +103,14 @@
 
 ## domains
 
+- 기업에서는 WAS를 아래와 같이 구축한다.
+
+<img width="612" alt="image" src="https://user-images.githubusercontent.com/77392444/114510017-23c0af80-9c71-11eb-9e3e-01eacbd922e8.png">
+
+- 이때 웹로직에서 폴더 구조를 보면 domain을 확인할 수 있다. 
+
 - `C:\Oracle\Middleware\Oracle_Home\user_projects\domains` 에 접속하면 설치할 때 디폴트로 생성된 base_domain이 존재한다. 
 
 - 각 domain 안에 cluster들이 여러개 존재하고, cluster 안에는 MS들이 또 여러개 존재한다. 
+
+
