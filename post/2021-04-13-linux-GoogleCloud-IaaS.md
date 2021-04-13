@@ -1,7 +1,8 @@
 
 
 ## IaaS란?
-<img width="856" alt="image" src="https://user-images.githubusercontent.com/77392444/114486300-96696500-9c48-11eb-94b5-68a7f3d19cd0.png">
+
+<img width="835" alt="image" src="https://user-images.githubusercontent.com/77392444/114500009-3aabd580-9c62-11eb-8cf0-15df22efd179.png">
 
 - 구글 클라우드 infrastructure : https://cloud.google.com/security/infrastructure/?hl=ko
 
