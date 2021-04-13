@@ -65,19 +65,28 @@
 
 ![image](https://user-images.githubusercontent.com/77392444/114505463-62ec0200-9c6b-11eb-8fcd-30754815939d.png)
 
-
 - 참고 블로그 : https://m.blog.naver.com/applej424/222090917540
 
 ## WebLogic 서버(WAS)에 웹어플리케이션 deploy하기
 
-- http://localhost:7001/console/login/LoginForm.jsp 에서 배치 클릭
+- base_domain에서 웹로직 실행하기
+  - base_domain 위치 : `C:\Oracle\Middleware\Oracle_Home\user_projects\domains\base_domain`
+  - 명령어 : `startWebLogic.cmd`
+
+![image](https://user-images.githubusercontent.com/77392444/114505238-0983d300-9c6b-11eb-85c5-e3013b38735d.png)
+
+
+- http://localhost:7001/console/login/LoginForm.jsp 접속해서 배치 클릭
 
 ![image](https://user-images.githubusercontent.com/77392444/114507000-8021d000-9c6d-11eb-8059-f26ca286e669.png)
 
 
-- 파일 업로드해서 설치하기
+- 파일 설치 버튼 눌러서 업로드하기
 
-- 버전에 맞지 않는 파일을 deploy하면 아래와 같은 오류가 발생한다.
+![image](https://user-images.githubusercontent.com/77392444/114507670-67fe8080-9c6e-11eb-810a-187e63e287bd.png)
+
+
+- 만약 버전에 맞지 않는 파일을 deploy하면 아래와 같은 오류가 발생한다.
 
 ![image](https://user-images.githubusercontent.com/77392444/114506688-1e616600-9c6d-11eb-8f4b-c0f884196c5b.png)
 
