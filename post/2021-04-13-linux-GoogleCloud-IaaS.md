@@ -146,7 +146,7 @@
 
 ![image](https://user-images.githubusercontent.com/77392444/114491840-4b544f80-9c52-11eb-859b-642e4e2fc92e.png)
 
-- apache2에 workers.properties 위치 설정하기 : `/etc/apache2/mods-available/httpd-jk.conf`파일 만들어서 아래 내용 작성하기
+- apache2에 workers.properties 위치 설정하기 : `/etc/apache2/mods-enabled/jk.conf`파일 만들어서 아래 내용 작성하기
 
 ![image](https://user-images.githubusercontent.com/77392444/114492268-36c48700-9c53-11eb-9203-637cbef20112.png)
 
