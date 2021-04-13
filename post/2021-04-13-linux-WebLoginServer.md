@@ -17,7 +17,7 @@
 
 - `Path` 환경변수에 `JAVA_HOME` 추가하기
 
-![image](https://user-images.githubusercontent.com/77392444/114502796-4a79e880-9c67-11eb-9f74-ffe266bc350b.png)
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/77392444/114523725-83be5280-9c7f-11eb-8064-32ea826ecaa5.png">
 
 - 시스템 변수에서 `CLASSPATH` 환경변수 새로 만들기
 
