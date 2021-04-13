@@ -163,3 +163,10 @@
 ![image](https://user-images.githubusercontent.com/77392444/114492860-645e0000-9c54-11eb-94ea-4b430cc64504.png)
 
 - 설정이 완료되면 `http://34.64.119.238/MyFirstApp/`로 접속했을 때, apache2의 MyFirstApp이 아니라 tomcat9의 MyFirstApp.war파일이 나온다.
+
+
+## Google Cloud VM인스턴스 중지시키기
+
+- 과금되지 않도록 사용하지 않는 인스턴스는 중지시켜야 한다.
+
+![image](https://user-images.githubusercontent.com/77392444/114501050-2d8fe600-9c64-11eb-8251-ee5b06cbeef8.png)
