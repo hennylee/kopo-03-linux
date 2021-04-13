@@ -1,5 +1,5 @@
 
-
+# 윈도우에 WebLogic 설치하고 deploy하기
 
 ## jdk 환경변수 설정해주기
 
@@ -99,3 +99,10 @@
 
 ![image](https://user-images.githubusercontent.com/77392444/114507567-443b3a80-9c6e-11eb-8e60-d0adccaad80e.png)
 
+
+
+## domains
+
+- `C:\Oracle\Middleware\Oracle_Home\user_projects\domains` 에 접속하면 설치할 때 디폴트로 생성된 base_domain이 존재한다. 
+
+- 각 domain 안에 cluster들이 여러개 존재하고, cluster 안에는 MS들이 또 여러개 존재한다. 
