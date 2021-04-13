@@ -104,7 +104,7 @@
 
 #### scp 명령어로 WAR 파일 복사해서 deploy하기
 
-`scp HP@192.168.217.33:/C:\Users\HP\Downloads/MyFirstApp.war iamsunny7514@34.64.119.238:/home/iamsunny7514/var/lib/tomcat9/webapps/ROOT/MyFirstApp.war`로 시도 했으나 실패함!
+`scp HP@192.168.217.33:/C:/Users/HP/Downloads/MyFirstApp.war iamsunny7514@34.64.119.238:/home/iamsunny7514/var/lib/tomcat9/webapps/ROOT/test/MyFirstApp.war`로 시도 했으나 실패함!
 
 
 #### GUI Manager를 활용해서 deploy하기
