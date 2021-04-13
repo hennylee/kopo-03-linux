@@ -158,3 +158,5 @@
 - tomcat에 connector의 port와 protocol로 오는 요청을 수신하라고 설정하기  : `/etc/tomcat9/server.xml`
 
 ![image](https://user-images.githubusercontent.com/77392444/114492860-645e0000-9c54-11eb-94ea-4b430cc64504.png)
+
+- 설정이 완료되면 `http://34.64.119.238/MyFirstApp/`로 접속했을 때, apache2의 MyFirstApp이 아니라 tomcat9의 MyFirstApp.war파일이 나온다.
