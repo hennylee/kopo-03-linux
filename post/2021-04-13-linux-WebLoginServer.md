@@ -1,7 +1,7 @@
 
-# 윈도우에 WebLogic 설치하고 deploy하기
+# WebLogic 설치하고 deploy하기
 
-## jdk 환경변수 설정해주기
+## 1. jdk 환경변수 설정해주기
 
 - 웹로직이 JAVA_HOME이라는 환경변수를 읽어서 실행하는 방식이기 때문에 JDK의 환경변수를 꼭 먼저 설정해줘야 한다.
 
@@ -29,7 +29,7 @@
 
 
 
-## Oracle의 WebLogic Sever 설치하기
+## 2. Window OS에 Oracle의 WebLogic Sever 설치하기
 
 - Oracle의 WebLogic Sever는 WAS의 일종이다.
 
@@ -67,7 +67,7 @@
 
 - 참고 블로그 : https://m.blog.naver.com/applej424/222090917540
 
-## WebLogic 서버(WAS)에 웹어플리케이션 deploy하기
+## 3. WebLogic 서버(WAS)에 웹어플리케이션 deploy하기
 
 - base_domain에서 웹로직 실행하기
   - base_domain 위치 : `C:\Oracle\Middleware\Oracle_Home\user_projects\domains\base_domain`
@@ -101,16 +101,18 @@
 
 
 
-## domains
+## 4. WebLogic의 domain 구조
 
 - 기업에서는 WAS를 아래와 같이 구축한다.
 
 <img width="612" alt="image" src="https://user-images.githubusercontent.com/77392444/114510017-23c0af80-9c71-11eb-9e3e-01eacbd922e8.png">
 
-- 이때 웹로직에서 폴더 구조를 보면 domain을 확인할 수 있다. 
+- 이때 오라클 웹로직에서 폴더 구조를 보면 `domain` 구조를 확인할 수 있다. 
 
 - `C:\Oracle\Middleware\Oracle_Home\user_projects\domains` 에 접속하면 설치할 때 디폴트로 생성된 base_domain이 존재한다. 
 
-- 각 domain 안에 cluster들이 여러개 존재하고, cluster 안에는 MS들이 또 여러개 존재한다. 
+- 즉, domains 내에 여러 개의 domain이 생성될 수 있는 것이다.  
+
+- 그리고 각각의 domain 안에는 여러개의 cluster들이 존재할 수 있고, 각각의 cluster 안에는 또 여러개의 MS들이 존재하게 되는 것이다. 
 
 
