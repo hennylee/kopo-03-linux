@@ -9,6 +9,16 @@
 
 - 현재는 Servlet을 SpringFramework가 대체하고 있다. 
 
+- Framework는 네트워크, transaction 처리를 밑단에서 처리해준다.
+
+- 처음에는 EJB(Enterprise Java Bean)이 있었다.
+
+- 이후 웹기반 Servlet이라는 프레임워크가 생겼다. 
+
+- 스프링 프레임워크는 Servlet을 더욱 쉽게 이용할 수 있게 해준 것이다. 
+
+- 스프링 프레임워크 내부적으로는 Servlet이 동작한다.
+
 
 ## Eclipse에서 새로운 프로젝트 생성하기
 
