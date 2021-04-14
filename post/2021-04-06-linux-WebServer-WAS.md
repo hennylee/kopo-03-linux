@@ -10,42 +10,53 @@
 
 ## Web Server의 역할
 - Static resource
-  - Web Server에서 Static Resource 처리를 빨리 해준다.
+  - DB까지 가지 않는 그림파일,  text 등의 정보 전달을 담당한다. 
+  - Web Server에서 Static Resource은 빠르게 처리할 수 있다.
 
 - Security
   - 방화벽 바깥에 Web Server를 위치시키고, WAS와 DB는 방화벽 안쪽에 배치시킨다. 
   - WAS의 주소가 직접 노출되지 않기 때문에 보안이 강화된다. 
-  - SSL이라는 https의 s가 SSL을 의미한다. 
-  - 이것을 Web Server가 속도가 빠르기 때문에 처리한다. 
+  - SSL처리를 해준다. https의 s가 SSL을 의미한다. 
 
 - Load balancing
-  - WAS의 부하가 심하지 않도록 여러 개의 WAS 서버에 적절하게 업무를 분배해 주는 것이다.
+  - WAS의 부하가 심해지지 않도록 하나의 Webserver가 여러 개의 WAS 서버에 적절하게 업무를 분배해 줄 수 있다.
   - 이로 인해 한정된 자원을 효율적으로 사용할 수 있게 된다. 
-
 
 ## Web Server 설치하기
 
-- `apt-get install apache2`
+- Apache 설치 : `apt-get install apache2`
 
+- 설치된 버전 확인 : `apache2 -v`
+
+- Apache 서비스 가동/멈춤/가동+멈춤 : `service apache2 start/stop/restart`
+
+- 80포트 확인 : `netstat -ntlp`
 
 ## index 페이지 바꿔보기
-- http://localhost에 접속하면 나오는 페이지는 `located at /var/www/html/index.html` 에 있다.
+- http://localhost 에 접속하면 나오는 페이지는 `located at /var/www/html/index.html` 에 있다.
 
+- 해당 index.html 파일을 수정하면 static resource 페이지를 수정할 수 있다.
 
 ## WAS 설치하기
 
-## sevlet이란?
-- WAS 설치에는 여러가지 목적이 있는데 EJB, Servlet...등을 지원하는 기능이 있다.
-- Framework는 네트워크, transaction를 밑단에서 처리해준다.
-- 처음에는 EJB(Enterprise Java Bean)이 있었다.
-- 이후 웹기반 Servlet이라는 프레임워크가 생겼다. 
-- 스프링 프레임워크는 Servlet을 더욱 쉽게 이용할 수 있게 해준 것이다. 
-- 스프링 프레임워크 내부적으로는 Servlet이 동작한다.
+- Permission 변경 : `/etc/apache2/apache2.conf`에서 <Directory>에 관한 설정을 `denied -> granted` 로 변경하기
 
-## Applications
-- `ip번호:포트번호//Application명`
+- 방화벽 해제 : `ufw allow 80`
 
-- Application은 WAR파일로 되어 있다. 
+- tomcat 설치 : `apt-get install tomcat9*`
+
+- 접속 주소 : http://localhost:8080  
+
+- tomcat 기본 경로 : `/var/lib/tomcat9/webapps/ROOT`
+
+  - 해당 경로에 Application을 deploy하면 `ip번호:포트번호//Application명`로 접속 가능하다.
+
+  - Application은 WAR파일로 deploy한다. 
+  
+  - WAS 설치에는 여러가지 목적이 있는데 EJB, Servlet...등을 지원하는 기능이 있다.
+
+- 경로 변경 : `/etc/tomcat9/server.xml`
+
 
 ## WAR란
 
@@ -63,5 +74,12 @@
 
 - deploy는 배포 후 동작하도록 WAS에게 명령하는것이다.
 
+
 ## Web Server 와 WAS 연결하기
+- 현재는 Web Server와 WAS가 따로 동작하고 있다. 
+
+- Apache의 라이브러리를 활용해서 WebServer와 WAS를 연결해볼 것이다. 
+
+- Web Server와 WAS를 연동하는 첫 번째 이유는 static resource를 웹서버에서, dynamic resource를 WAS에서 처리하도록 하기 위함이다. 
+
 - 
