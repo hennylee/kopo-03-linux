@@ -45,6 +45,8 @@
 
 - DNS 서버 : `systemd-resolve --status ens33`
 
+ - `ens33`이란? : 인터페이스 타입이 이더넷이고(en),  슬롯(s) 번호가 33 (33)인 네트워크 인터페이스(NIC) 디바이스명
+
 - 네트워크 설정 : `nm-connection-editor`
 
  - `nm`은 Network Manager의 약자이다. 
