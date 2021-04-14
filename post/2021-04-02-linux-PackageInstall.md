@@ -72,3 +72,10 @@
 - git 설치하기
 
 ![image](https://user-images.githubusercontent.com/77392444/113374010-0e14d580-93a7-11eb-8980-4fb18d3770a1.png)
+
+- git과 연동할 폴더 만들고 이동하기 : `mkdir git` - `cd git`
+
+- git 연동 초기화하기 : `git init` - `ls -al` 해서 `.git`폴더가 만들어졌는지 확인하기 
+
+- git repository clone하기 : `git clone https://github.com/hennylee/kopo-03-linux.git` 
+
