@@ -1,6 +1,14 @@
+
+# Login Servlet 만들어서 서버에 deploy해보기
+
 ## Servlet이란?
 
-## Login Servlet 만들어보기
+- 클라이언트의 요청을 처리하고, 그 결과를 다시 클라이언트에게 전송하는 Servlet 클래스의 구현 규칙을 지킨 자바 프로그램이다.
+
+- 즉, 클라이언트의 HTTP 요청에 대해 특정 기능을 수행하고 html 문서를 생성하는 등의 응답을 하는 인터넷 서버 프로그램이다.
+
+- 현재는 Servlet을 SpringFramework가 대체하고 있다. 
+
 
 ## Eclipse에서 새로운 프로젝트 생성하기
 
@@ -145,18 +153,11 @@ public class LoginServlet extends HttpServlet {
 </web-app>
 ```
 
-## war파일 Export하기
+## war파일 구동시켜보기
 
+1. eclipse 내에서 tomcat서버 설정해서 Server Run하기
 
-## 구동시켜보기
+2. tomcat에 war파일 export해서 deploy하기 
+	- eclise에서 실행시킨 서버 끄기 : `systemctl stop tomcat버전.service`
 
-### 1. eclipse에서 Server Run하기
-
-
-
-### 2. tomcat에 war파일 deploy하기 
-
-- eclise에서 실행시킨 서버 끄기 : `systemctl stop tomcat버전.service`
-
-
-### 3. 기존 connector에 연결해둔 tomcat에 deploy하기
+3. 기존 apache2 connector에 연결해둔 tomcat에 war파일로 export해서 deploy하기
