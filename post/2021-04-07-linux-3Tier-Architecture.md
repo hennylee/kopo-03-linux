@@ -21,6 +21,9 @@
 
 ## 클러스터
 
+![image](https://user-images.githubusercontent.com/77392444/114797800-e8d48e00-9dce-11eb-9a44-08e4d039afb4.png)
+
+
 클러스터는 도메인 내에서 같은 서비스를 수행하는 MS들로 구성된다. 보통 여러 머신에 분산되어 있다. 이렇게 구성된 클러스터는 다음과 같은 기능을 갖는다.
 
 - 부하 분산(Load Balancing)
