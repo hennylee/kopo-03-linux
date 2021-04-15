@@ -15,11 +15,9 @@
 <img width="921" alt="image" src="https://user-images.githubusercontent.com/77392444/114680793-7f11a100-9d48-11eb-902c-46e513b0a13a.png">
 
 
-
-<img width="868" alt="image" src="https://user-images.githubusercontent.com/77392444/114680913-9d779c80-9d48-11eb-9c3f-47efe27459a5.png">
-
 ## FailOver
 
+<img width="868" alt="image" src="https://user-images.githubusercontent.com/77392444/114680913-9d779c80-9d48-11eb-9c3f-47efe27459a5.png">
 
 
 ## 3계층 구조의 장점
