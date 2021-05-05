@@ -30,7 +30,9 @@ IP(ip1)에 Webserver(Apache2)를 깔고 다른 IP(ip2)의 WAS(tomcat9) 연동하
 
 - 설정 파일 : `sudo vim /etc/tomcat9/server.xml`에서 커넥터 설정 추가
 
-![image](https://user-images.githubusercontent.com/77392444/113952618-f4fda000-9850-11eb-8d1d-eb6edfe91429.png)
+![image](https://user-images.githubusercontent.com/77392444/113961418-f6cf5f80-9860-11eb-856d-d03870135dbb.png)
+
+
 
 - 변경 설정 적용하기 위해 데몬 재시작 : `systemctl restart tomcat9`
 
