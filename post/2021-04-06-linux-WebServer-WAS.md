@@ -1,11 +1,25 @@
-## WebServer와 Was
 
-![image](https://user-images.githubusercontent.com/77392444/114024060-9535e200-98ae-11eb-8c26-f25a3887b00d.jpeg)
+## Web Server란?
 
-- 좀더 상세하게 표현하면 아래와 같은 구조를 갖는다.
+![image](https://user-images.githubusercontent.com/77392444/117099123-53179780-adab-11eb-8a65-14fc94c18e4a.png)
 
-![image](https://user-images.githubusercontent.com/77392444/114024458-0b3a4900-98af-11eb-913d-ba43be2a53bd.jpeg)
 
+- 클라이언트의 요청이 들어올 때, 가장 앞단에서 요청에 대한 처리를 하는 서버이다. 
+
+- 클라이언트의 요청을 기다리고 요청에 대한 데이터를 만들어서 응답하는 역할을 한다. 
+
+- 주로 바뀌지 않는 정적 콘텐츠를 제공하는 서버이다. 
+
+## WAS란?
+
+![image](https://user-images.githubusercontent.com/77392444/117099127-590d7880-adab-11eb-891e-fa22b2e05829.png)
+
+
+- Web Application Server의 약자로, 어플리케이션을 동작할 수 있도록 지원하는 서버이다. 
+
+- WAS는 동적인 페이지를 주로 표현한다. 
+
+- WAS란 실제로 처리해야 하는 비즈니스 로직이 올라가는 서버이다. 
 
 
 ## Web Server의 역할
@@ -22,7 +36,26 @@
   - WAS의 부하가 심해지지 않도록 하나의 Webserver가 여러 개의 WAS 서버에 적절하게 업무를 분배해 줄 수 있다.
   - 이로 인해 한정된 자원을 효율적으로 사용할 수 있게 된다. 
 
+
+## WebServer와 Was
+
+- 웹서버와 WAS서버의 관계는 주로 아래와 같다. 
+
+![image](https://user-images.githubusercontent.com/77392444/114024060-9535e200-98ae-11eb-8c26-f25a3887b00d.jpeg)
+
+- 좀더 상세하게 표현하면 아래와 같은 구조를 갖는다.
+
+![image](https://user-images.githubusercontent.com/77392444/114024458-0b3a4900-98af-11eb-913d-ba43be2a53bd.jpeg)
+
+
+
 ## Web Server 설치하기
+
+```
+- os : 우분투
+- WebServer : Apache
+- ip : 192.168.119.113
+```
 
 - Apache 설치 : `apt-get install apache2`
 
@@ -32,12 +65,20 @@
 
 - 80포트 확인 : `netstat -ntlp`
 
-## index 페이지 바꿔보기
+## Web Server index 페이지 바꿔보기
 - http://localhost 에 접속하면 나오는 페이지는 `located at /var/www/html/index.html` 에 있다.
 
 - 해당 index.html 파일을 수정하면 static resource 페이지를 수정할 수 있다.
 
+
+
 ## WAS 설치하기
+
+```
+- os : 우분투
+- WAS : tomcat
+- ip : 192.168.119.112
+```
 
 - Permission 변경 : `/etc/apache2/apache2.conf`에서 <Directory>에 관한 설정을 `denied -> granted` 로 변경하기
 
