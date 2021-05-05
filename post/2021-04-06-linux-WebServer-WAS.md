@@ -65,6 +65,13 @@
 
 - 80포트 확인 : `netstat -ntlp`
 
+- Permission 변경 : `/etc/apache2/apache2.conf`에서 <Directory>에 관한 설정을 `denied -> granted` 로 변경하기
+
+![image](https://user-images.githubusercontent.com/77392444/117101756-e227ae00-adb1-11eb-9f3d-669084887bd0.png)
+
+- 방화벽 해제 : `ufw allow 80`
+
+
 ## Web Server index 페이지 바꿔보기
 - http://localhost 에 접속하면 나오는 페이지는 `located at /var/www/html/index.html` 에 있다.
 
@@ -79,13 +86,6 @@
 - WAS : tomcat
 - ip : 192.168.119.112
 ```
-
-- Permission 변경 : `/etc/apache2/apache2.conf`에서 <Directory>에 관한 설정을 `denied -> granted` 로 변경하기
-
-![image](https://user-images.githubusercontent.com/77392444/117101756-e227ae00-adb1-11eb-9f3d-669084887bd0.png)
-
-
-- 방화벽 해제 : `ufw allow 80`
 
 - tomcat 설치 : `apt-get install tomcat9*`
 
@@ -125,5 +125,8 @@
 - Apache의 라이브러리를 활용해서 WebServer와 WAS를 연결해볼 것이다. 
 
 - Web Server와 WAS를 연동하는 첫 번째 이유는 static resource를 웹서버에서, dynamic resource를 WAS에서 처리하도록 하기 위함이다. 
+
+- Connector 설치 : `sudo apt-get install libapache2-mod-jk*`
+
 
 - 링크 : https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-08-linux-Connector.md
