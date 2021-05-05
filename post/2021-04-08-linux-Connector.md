@@ -10,6 +10,8 @@ IP(ip1)에 Webserver(Apache2)를 깔고 다른 IP(ip2)의 WAS(tomcat9) 연동하
 
 ## 1.2 Standalone 컴퓨터 Connector에  ServeC 컴퓨터에 tomcat9을 worker로 등록하기
 
+- Connector 설치 : `sudo apt-get install libapache2-mod-jk*`
+
 - 설정 파일 : `sudo vim /etc/libapache2-mod-jk/workers.properties`에서 내용 수정
 
 ![image](https://user-images.githubusercontent.com/77392444/113952687-18c0e600-9851-11eb-87d4-0308484f4528.png)
