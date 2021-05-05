@@ -5,9 +5,9 @@ IP(ip1)에 Webserver(Apache2)를 깔고 다른 IP(ip2)의 WAS(tomcat9) 연동하
 
 ## 1.1 Apache(웹서버), tomcat9(WAS) 설치하기
 
-- apache 설치 : https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-06-linux-WebServer-WAS.md#web-server-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
+- apache 설치 : [설치 방법](https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-06-linux-WebServer-WAS.md#web-server-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
 
-- tomcat 설치 : https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-06-linux-WebServer-WAS.md#was-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
+- tomcat 설치 : [설치 방법](https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-06-linux-WebServer-WAS.md#was-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0)
 
 - Connector 설치 : `sudo apt-get install libapache2-mod-jk*`
 
