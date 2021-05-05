@@ -233,6 +233,7 @@ JkMount /sample/* was_worker
 
 
 - WAS 에서의 `http://localhost/sample/`
+
 ![image](https://user-images.githubusercontent.com/77392444/117109551-cdeaad80-adbf-11eb-8ed1-6cedbd5a3afb.png)
 
 
