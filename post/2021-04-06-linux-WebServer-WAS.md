@@ -181,7 +181,7 @@
 
 
 
-### 9.2 Apache Web Server 설정 
+### 9.3 Apache Web Server 설정 
 
 - `vim /etc/apache2/mods-available/jk.load`에 아래 내용을 추가한다.
 
