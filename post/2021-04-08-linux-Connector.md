@@ -15,6 +15,9 @@ IP(ip1)에 Webserver(Apache2)를 깔고 다른 IP(ip2)의 WAS(tomcat9) 연동하
 
 - 설정 파일 : `sudo vim /etc/libapache2-mod-jk/workers.properties`에서 내용 수정
 
+![image](https://user-images.githubusercontent.com/77392444/117105488-13f04300-adb9-11eb-96cf-295a1bc1530d.png)
+
+
 ![image](https://user-images.githubusercontent.com/77392444/113952687-18c0e600-9851-11eb-87d4-0308484f4528.png)
 
 
