@@ -82,6 +82,9 @@
 
 - Permission 변경 : `/etc/apache2/apache2.conf`에서 <Directory>에 관한 설정을 `denied -> granted` 로 변경하기
 
+![image](https://user-images.githubusercontent.com/77392444/117101756-e227ae00-adb1-11eb-9f3d-669084887bd0.png)
+
+
 - 방화벽 해제 : `ufw allow 80`
 
 - tomcat 설치 : `apt-get install tomcat9*`
