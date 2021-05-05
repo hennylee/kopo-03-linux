@@ -1,8 +1,7 @@
 
 ## Web Server란?
 
-![image](https://user-images.githubusercontent.com/77392444/117099123-53179780-adab-11eb-8a65-14fc94c18e4a.png)
-
+![image](https://user-images.githubusercontent.com/77392444/117099257-ab4e9980-adab-11eb-9d49-7beb6f65abe4.png)
 
 - 클라이언트의 요청이 들어올 때, 가장 앞단에서 요청에 대한 처리를 하는 서버이다. 
 
@@ -12,7 +11,7 @@
 
 ## WAS란?
 
-![image](https://user-images.githubusercontent.com/77392444/117099127-590d7880-adab-11eb-891e-fa22b2e05829.png)
+![image](https://user-images.githubusercontent.com/77392444/117099273-b5709800-adab-11eb-9e05-9770981d0a73.png)
 
 
 - Web Application Server의 약자로, 어플리케이션을 동작할 수 있도록 지원하는 서버이다. 
@@ -20,6 +19,19 @@
 - WAS는 동적인 페이지를 주로 표현한다. 
 
 - WAS란 실제로 처리해야 하는 비즈니스 로직이 올라가는 서버이다. 
+
+
+
+## WebServer와 Was
+
+- 웹서버와 WAS서버의 관계는 주로 아래와 같다. 
+
+![image](https://user-images.githubusercontent.com/77392444/114024060-9535e200-98ae-11eb-8c26-f25a3887b00d.jpeg)
+
+- 좀더 상세하게 표현하면 아래와 같은 구조를 갖는다.
+
+![image](https://user-images.githubusercontent.com/77392444/114024458-0b3a4900-98af-11eb-913d-ba43be2a53bd.jpeg)
+
 
 
 ## Web Server의 역할
@@ -35,18 +47,6 @@
 - Load balancing
   - WAS의 부하가 심해지지 않도록 하나의 Webserver가 여러 개의 WAS 서버에 적절하게 업무를 분배해 줄 수 있다.
   - 이로 인해 한정된 자원을 효율적으로 사용할 수 있게 된다. 
-
-
-## WebServer와 Was
-
-- 웹서버와 WAS서버의 관계는 주로 아래와 같다. 
-
-![image](https://user-images.githubusercontent.com/77392444/114024060-9535e200-98ae-11eb-8c26-f25a3887b00d.jpeg)
-
-- 좀더 상세하게 표현하면 아래와 같은 구조를 갖는다.
-
-![image](https://user-images.githubusercontent.com/77392444/114024458-0b3a4900-98af-11eb-913d-ba43be2a53bd.jpeg)
-
 
 
 ## Web Server 설치하기
