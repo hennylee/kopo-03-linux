@@ -129,10 +129,21 @@
   - Web Server와 WAS를 연동하는 첫 번째 이유는 static resource를 웹서버에서, dynamic resource를 WAS에서 처리하도록 하기 위함이다. 
 
 
-- Connector 설치 : `sudo apt-get install libapache2-mod-jk*`
+### Connector 설치 
 
-- Apache Web Server 설정 : 
-  - `vim /etc/apache2/mods-available/jk.load`에 아래 내용을 추가한다.
+- 설치 : `sudo apt-get install libapache2-mod-jk*`
+
+- Apache Web Server Connector 설정 : 
+  - `vim /etc/libapache2-mod-jk/workers.properties`에서 workers 등록, JAVA 등 기본 디렉토리 설정
+
+![image](https://user-images.githubusercontent.com/77392444/117105488-13f04300-adb9-11eb-96cf-295a1bc1530d.png)
+
+![image](https://user-images.githubusercontent.com/77392444/113952687-18c0e600-9851-11eb-87d4-0308484f4528.png)
+
+
+### Apache Web Server 설정 
+
+- `vim /etc/apache2/mods-available/jk.load`에 아래 내용을 추가한다.
 
 ```shell
 LoadModule jk_module /usr/lib/apache2/modules/mod_jk.so
@@ -145,7 +156,7 @@ JkShmFile /var/log/apache2/jk-runtime-status
 ![image](https://user-images.githubusercontent.com/77392444/117106850-895d1300-adbb-11eb-9e1b-b263e0de34ae.png)
 
 
-  - `vim /etc/apache2/mods-available/httpd-jk.conf`에서 아래 내용을 추가한다. (있으면 생략)
+- `vim /etc/apache2/mods-available/httpd-jk.conf`에서 아래 내용을 추가한다. (있으면 생략)
 
 ```shell
 <IfModule jk_module>
@@ -155,7 +166,7 @@ JkShmFile /var/log/apache2/jk-runtime-status
     JkWorkersFile /etc/libapache2-mod-jk/workers.properties
 ```
 
-  - `vim /etc/apache2/sites-available/000-default.conf`에서 연동될 url 패턴(JkMount)를 등록한다.
+- `vim /etc/apache2/sites-available/000-default.conf`에서 연동될 url 패턴(JkMount)를 등록한다.
 
 ```shell
 ServerName 127.0.0.1
@@ -169,18 +180,21 @@ JkMount /* was_worker
 
 
 
-- Apache Web Server Connector 설정 : 
-  - `vim /etc/libapache2-mod-jk/workers.properties`에서 workers 등록, JAVA 등 기본 디렉토리 설정
 
-![image](https://user-images.githubusercontent.com/77392444/117105488-13f04300-adb9-11eb-96cf-295a1bc1530d.png)
+### Tomcat WAS 설정
+- `sudo vim /etc/tomcat9/server.xml`에서 커넥터 설정 추가
 
-![image](https://user-images.githubusercontent.com/77392444/113952687-18c0e600-9851-11eb-87d4-0308484f4528.png)
+```shell
+<!-- Define an AJP 1.3 Connector on port 8009 -->
+
+<Connector protocol="AJP/1.3"
+           port="8009"
+        redirectPort="8443"
+        address="0.0.0.0" secretRequired="false"/>
+```
 
 
-- Tomcat WAS 설정 : 
-  - `sudo vim /etc/tomcat9/server.xml`에서 커넥터 설정 추가
-
-![image](https://user-images.githubusercontent.com/77392444/113961418-f6cf5f80-9860-11eb-856d-d03870135dbb.png)
+![image](https://user-images.githubusercontent.com/77392444/117107095-fec8e380-adbb-11eb-8dee-5bf51b334d1d.png)
 
 
 
