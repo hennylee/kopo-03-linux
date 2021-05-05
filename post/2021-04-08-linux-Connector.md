@@ -3,14 +3,15 @@
 IP(ip1)에 Webserver(Apache2)를 깔고 다른 IP(ip2)의 WAS(tomcat9) 연동하기
 
 
-## 1.1 ServeC 컴퓨터에 tomcat9 설치하기
+## 1.1 Apache(웹서버), tomcat9(WAS) 설치하기
 
-- 설치 : `sudo apt-get install tomcat9*`
+- apache 설치 : https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-06-linux-WebServer-WAS.md#web-server-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
 
-
-## 1.2 Standalone 컴퓨터 Connector에  ServeC 컴퓨터에 tomcat9을 worker로 등록하기
+- tomcat 설치 : https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-06-linux-WebServer-WAS.md#was-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0
 
 - Connector 설치 : `sudo apt-get install libapache2-mod-jk*`
+
+## 1.2 Standalone 컴퓨터 Connector에  ServeC 컴퓨터에 tomcat9을 worker로 등록하기
 
 - 설정 파일 : `sudo vim /etc/libapache2-mod-jk/workers.properties`에서 내용 수정
 
