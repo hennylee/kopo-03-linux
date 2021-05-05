@@ -82,4 +82,4 @@
 
 - Web Server와 WAS를 연동하는 첫 번째 이유는 static resource를 웹서버에서, dynamic resource를 WAS에서 처리하도록 하기 위함이다. 
 
-- 
+- 링크 : https://github.com/hennylee/kopo-03-linux/blob/main/post/2021-04-08-linux-Connector.md
